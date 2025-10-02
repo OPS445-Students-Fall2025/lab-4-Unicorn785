@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-# Author ID: pkandasamy7@myseneca.ca
+# Author ID: pkandasamy7  
 
-#if theres no characters in 0-9 it will return false, if there is it would be true
 def is_digits(sobj):
-    #Return True if all characters in sobj are digits, otherwise False
+    # Return True if all characters in sobj are digits
     for ch in sobj:
         if ch not in '0123456789':
             return False
