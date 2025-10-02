@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Author ID: pkandasamy7
 
 # Dictionaries
 dict_york = {'Address': '70 The Pond Rd', 'City': 'Toronto', 'Country': 'Canada', 'Postal Code': 'M3J3M6', 'Province': 'ON'}
@@ -9,7 +10,7 @@ list_keys = ['Address', 'City', 'Country', 'Postal Code', 'Province']
 list_values = ['70 The Pond Rd', 'Toronto', 'Canada', 'M3J3M6', 'ON']
 
 def create_dictionary(keys, values):
-    """Create a dictionary by combining keys and values with a while loop."""
+    # accepts two lists as arguments keys and values, combines these to create a dictionary (use a while loop)
     d = {}
     i = 0
     while i < len(keys) and i < len(values):
@@ -18,7 +19,7 @@ def create_dictionary(keys, values):
     return d
 
 def shared_values(dict1, dict2):
-    """Return a set of values that appear in both dictionaries."""
+    # accepts two dictionaries and returns a set of values shared between them
     return set(dict1.values()) & set(dict2.values())
 
 if __name__ == '__main__':
